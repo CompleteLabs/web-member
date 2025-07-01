@@ -29,9 +29,9 @@ class LeadResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('phone')
                     ->tel()
-                    ->numeric()
                     ->required()
-                    ->maxLength(15),
+                    ->maxLength(15)
+                    ->placeholder('Contoh: 08123456789 atau 628123456789'),
                 Forms\Components\Textarea::make('address')
                     ->required()
                     ->columnSpanFull(),
